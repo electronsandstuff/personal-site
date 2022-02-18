@@ -23,7 +23,7 @@ email: contact@chris-pierce.com
 description: >- # this means to ignore newlines until "baseurl:"
         My new personal website!
 baseurl: "/personal-site" # the subpath of your site, e.g. /blog
-url: "electronsandstuff.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://electronsandstuff.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: electronsnstuff
 github_username:  electronsandstuff
 
