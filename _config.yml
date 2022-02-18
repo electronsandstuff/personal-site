@@ -28,7 +28,7 @@ twitter_username: electronsnstuff
 github_username:  electronsandstuff
 
 # Build settings
-theme: jekyll-theme-cayman
+theme: minima
 plugins:
   - jekyll-feed
 
