@@ -28,9 +28,13 @@ twitter_username: electronsnstuff
 github_username:  electronsandstuff
 
 # Build settings
-theme: minima
+# theme: minima
+remote_theme: pages-themes/modernist@v0.2.0
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
+show_downloads: false
+google_analytics: G-V4CPDWBH7X
 
 # Exclude from processing.
 # The following items will not be processed, by default.
