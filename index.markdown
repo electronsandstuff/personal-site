@@ -18,9 +18,9 @@ Check me out at the following socials! <br/>
 <img src="/assets/GitHub-Mark-32px.png" height="16"> [Github](https://github.com/electronsandstuff) / <img src="/assets/icons8-google-scholar.svg" height="16">[Google Scholar](https://scholar.google.com/citations?user=3PDcxFYAAAAJ) / <img src="/assets/104461_twitter_icon.png" height="16"> [Twitter](https://twitter.com/ElectronsNStuff) / <img src="/assets/icons8-email-open-50.png" height="16"> [Email](mailto:website-contact@chris-pierce.com)
 
 # What is Chris up to?
-Finishing up my last year of research, writing my thesis, and planning what's in store after grad school.
+In my last year of research, writing my thesis, and planning what's in store after grad school.
 
-If you are a PI, looking for postdocs, and have overlapping interests with me then feel free to get in touch!
+If you're a PI, looking for postdocs, and have overlapping interests with me then feel free to get in touch!
 
 Last updated: __2022 July 14__
 
