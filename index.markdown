@@ -29,3 +29,4 @@ Last updated: __2022 August 9__
  * If you use [General Particle Tracer](http://www.pulsar.nl/gpt/), check out [easyGDF](https://github.com/electronsandstuff/easygdf), my python file reader
  * I am affiliated with the [Center for Bright Beams](https://cbb.cornell.edu/)
  * My home lab is [Cornell's photocathode research group](https://www.classe.cornell.edu/~ib38/)
+ * I completed advent of code for the first time! Check out my solutions [here](https://github.com/electronsandstuff/Advent-of-Code-2021).
