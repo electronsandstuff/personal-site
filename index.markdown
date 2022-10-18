@@ -27,5 +27,5 @@ Last updated: __2022 October 18__
  * If you use [General Particle Tracer](http://www.pulsar.nl/gpt/), check out [easyGDF](https://github.com/electronsandstuff/easygdf), my python file reader
  * I am affiliated with the [Center for Bright Beams](https://cbb.cornell.edu/)
  * My current work is with [Young-Kee Kim and her group](https://hep.uchicago.edu/~ykkim/index.shtml) at the University of Chicago
- * I'm an alumni of [Cornell's photocathode research group](https://www.classe.cornell.edu/~ib38/)
+ * I am an alumni of [Cornell's photocathode research group](https://www.classe.cornell.edu/~ib38/)
  * I completed advent of code for the first time! Check out my solutions [here](https://github.com/electronsandstuff/Advent-of-Code-2021).
