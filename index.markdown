@@ -11,22 +11,21 @@ layout: default
 </figure>
 
 Hi there!
-I am a PhD student studying [accelerator physics](https://en.wikipedia.org/wiki/Accelerator_physics) at Cornell University.
-My research interests include advanced optimization techniques, photocathode design / characterization, ultrafast science, and the applications of machine learning to physics.
+I am a researcher studying [accelerator physics](https://en.wikipedia.org/wiki/Accelerator_physics) at the University of Chicago.
+My research interests include advanced photocathodes, ultrafast science, and the applications of machine learning to physics.
 
 Check me out at the following socials! <br/>
 <img src="/assets/GitHub-Mark-32px.png" height="16"> [Github](https://github.com/electronsandstuff) / <img src="/assets/icons8-google-scholar.svg" height="16">[Google Scholar](https://scholar.google.com/citations?user=3PDcxFYAAAAJ) / <img src="/assets/104461_twitter_icon.png" height="16"> [Twitter](https://twitter.com/ElectronsNStuff) / <img src="/assets/icons8-email-open-50.png" height="16"> [Email](mailto:website-contact@chris-pierce.com)
 
 # What is Chris up to?
-I am in New Mexico giving a talk on some of my research at [NAPAC 22](https://attend.ieee.org/napac-2022/).
+Just moved back to Berkeley for a few measurements before continuing on to Chicago to work on ML in physics.
 
-If you are a PI, looking for postdocs, and have overlapping interests with me then feel free to connect!
-
-Last updated: __2022 August 9__
+Last updated: __2022 October 18__
 
 
 # Links
  * If you use [General Particle Tracer](http://www.pulsar.nl/gpt/), check out [easyGDF](https://github.com/electronsandstuff/easygdf), my python file reader
  * I am affiliated with the [Center for Bright Beams](https://cbb.cornell.edu/)
- * My home lab is [Cornell's photocathode research group](https://www.classe.cornell.edu/~ib38/)
+ * My current work is with [Young-Kee Kim and her group](https://hep.uchicago.edu/~ykkim/index.shtml) at University of Chicago
+ * I'm an alumni of [Cornell's photocathode research group](https://www.classe.cornell.edu/~ib38/)
  * I completed advent of code for the first time! Check out my solutions [here](https://github.com/electronsandstuff/Advent-of-Code-2021).
