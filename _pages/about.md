@@ -30,7 +30,7 @@ However, after the neural network has been trained on sparse calculated results,
 {: refdef}
 
 In addition to my work on scientific machine learning, my interests include photocathode physics for particle accelerator applications.
-Photocathodes are used to generate high-brightness electron beams which are necessary for some applications of particle accelerators, such as free electron lasers and ultrafast electron diffraction.
+Photocathodes are used to generate high-brightness electron beams which are necessary for some applications of particle accelerators, such as [free electron lasers](https://lcls.slac.stanford.edu/lcls-ii) and [ultrafast electron diffraction](https://en.wikipedia.org/wiki/Ultrafast_electron_diffraction).
 The brightness of electron beams produced by the photocathode is highly dependent on the choice of photocathode material and in particular a material-dependent property called the mean transverse energy.
 Measuring the mean tranverse energy of photocathodes and devloping models that can predict this metric based on other material properties and understand how real-world problems can affect models are important goals in accelerator physics.
 
