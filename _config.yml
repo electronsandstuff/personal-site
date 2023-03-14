@@ -74,12 +74,12 @@ og_image: https://chris-pierce.com/assets/img/opengraph-preview-photo.jpg # The 
 
 github_username: electronsandstuff # your GitHub user name
 gitlab_username: # your GitLab user name
-mastodon_username: # your mastodon instance+username in the format instance.tld/@username
+mastodon_username: fosstodon.org/@electronsnstuff # your mastodon instance+username in the format instance.tld/@username
 telegram_username: # your Telegram user name
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-twitter_username: electronsnstuff # your Twitter handle
-linkedin_username: # your LinkedIn user name
+twitter_username: # your Twitter handle
+linkedin_username: christopher-pierce-physics # your LinkedIn user name
 scholar_userid: 3PDcxFYAAAAJ # your Google Scholar ID
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
