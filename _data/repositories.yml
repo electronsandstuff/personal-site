@@ -5,4 +5,6 @@ repo_description_lines_max: 2
 
 github_repos:
   - electronsandstuff/easygdf
+  - electronsandstuff/py-pfeiffer-vacuum-protocol
   - electronsandstuff/Advent-of-Code-2021
+  - electronsandstuff/BeLinear

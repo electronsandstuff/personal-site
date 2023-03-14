@@ -1,39 +1,20 @@
 ---
 layout: page
 permalink: /repositories/
-title: repositories
+title: Repositories
 description: 
 nav: true
 nav_order: 4
 ---
 
-{% if site.data.repositories.github_users %}
+I am committed to the principles of open science and the use of open-source scientific software.
+My own released projects are available to download on my github account under the username [@electronsandstuff](https://github.com/electronsandstuff).
+Additionally, I operate [The Photocathode Database](https://photocathodes.io), a repository of published measurements on photocathode materials.
+By making this data open and accessible to scientists and the public, I hope to enable faster and more efficient progress in research on photocathode materials as well as introduce the general public to this topic.
+I encourage others to contribute to my projects, whether by submitting bug reports, helping to digitize scientific data, making feature requests, or contributing code. 
 
-## GitHub users
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for user in site.data.repositories.github_users %}
-    {% include repository/repo_user.liquid username=user %}
-  {% endfor %}
-</div>
-
----
-
-{% if site.repo_trophies.enabled %}
-{% for user in site.data.repositories.github_users %}
-{% if site.data.repositories.github_users.size > 1 %}
-
-  <h4>{{ user }}</h4>
-  {% endif %}
-  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% include repository/repo_trophies.liquid username=user %}
-  </div>
-
----
-
-{% endfor %}
-{% endif %}
-{% endif %}
+The following repositories are a couple of the projects that I have released.
+Follow the links and take a look around.
 
 {% if site.data.repositories.github_repos %}
 

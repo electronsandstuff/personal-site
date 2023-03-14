@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Postdoctoral Scholar, <a href='https://efi.uchicago.edu/'>Enrico Fermi Institute, University of Chicago</a>
 
