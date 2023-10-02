@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Postdoctoral Scholar, <a href='https://efi.uchicago.edu/'>Enrico Fermi Institute, University of Chicago</a>
+subtitle: Accelerator Physicist, Stealth Startup
 
 profile:
   align: right
@@ -15,18 +15,18 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-As a postdoctoral scholar at the University of Chicago, I am working with Professor [Young-Kee Kim](https://hep.uchicago.edu/~ykkim/index.shtml) to investigate the intersection between accelerator physics and machine learning.
-Particle accelerators are ideal playgrounds for exploring the potential of scientific machine learning.
+Particle accelerators are an ideal playground to explore the potential of scientific machine learning.
 These systems generate large, complex, and physically-constrained data sets, which can be challenging to analyze using traditional methods.
-Machine learning techniques, however, have shown promise in uncovering complex nonlinear patterns and correlations in data which may be used to improve the design and operation of particle accelerators.
-In the work I am leading at the University of Chicago, we are integrating machine learning techniques with the physical laws that govern charged particle beams to improve the modeling, instrumentation, control, and optimization of particle accelerators.
+Machine learning techniques, however, have shown promise in uncovering complex nonlinear patterns and correlations in data and we may be able to use them to improve the way particle accelerators are designed and operated.
+In my work, I am integrating machine learning techniques with the physical laws that govern charged particle beams to improve the modeling, instrumentation, control, and optimization of particle accelerators.
 
-As an example of the power of machine learning, the following figure represents the output of a neural network which has been trained to predict the density of a charged particle beam in phase space as it traverses a toy particle accelerator system with the inclusion of space charge forces.
+As an example of the power of machine learning, the following figure represents the output of a neural network which has been trained to predict the shape of a particle beam in phase space as it traverses a toy particle accelerator.
+Nonlinear space charge forces degrade the beam's "emittance" (in plain language, quality) over time.
 Space charge forces are usually expensive to model in physics-based simulation tools.
 However, after the neural network has been trained on sparse calculated results, it is able to query the properties of the beam as system parameters are varied in an efficient and differentiable manner.
 
 {:refdef: style="text-align: center;"}
-![A visualization of isosurfaces of a beam distribution function solved for using scientific machine learning](/assets/img/pinn-beam-isosurfaces.png){: width="500" }
+![A visualization of a particle beam's distribution function solved for using scientific machine learning](/assets/img/uniform-focusing-channel-beam.gif){: width="256" }
 {: refdef}
 
 In addition to my work on scientific machine learning, my interests include photocathode physics for particle accelerator applications.
@@ -43,5 +43,5 @@ I am always looking for help to maintain this resources and interested parties s
 
 
 {:refdef: style="text-align: center;"}
-![A scanning electron micrograph of a nanopatterned spiral photocathode proposed for source size reduction](/assets/img/spiral-plasmonic-lens.png){: width="500" }
+![A scanning electron micrograph of a nanopatterned spiral photocathode proposed for source size reduction](/assets/img/spiral-plasmonic-lens.png){: width="400" }
 {: refdef}
