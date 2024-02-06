@@ -36,7 +36,7 @@ Space charge forces are usually expensive to model in physics-based simulation t
 However, after the neural network has been trained on sparse calculated results, it is able to query the properties of the beam as system parameters are varied in an efficient and differentiable manner.
 
 {:refdef: style="text-align: center;"}
-![A visualization of a particle beam's distribution function solved for using scientific machine learning](/assets/img/uniform-focusing-channel-beam.gif){: width="256" }
+![A visualization of a particle beam's distribution function solved for using scientific machine learning](/assets/img/uniform-focusing-channel-beam-2.gif){: width="256" }
 {: refdef}
 
 In addition to my work on scientific machine learning, my interests include photocathode physics for particle accelerator applications.
