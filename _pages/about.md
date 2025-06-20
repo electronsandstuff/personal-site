@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Accelerator Physicist, Stealth Startup
+subtitle: Accelerator Physicist, xLight Inc.
 
 profile:
   align: right
