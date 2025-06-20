@@ -51,7 +51,6 @@ Additionally, I created and maintain an open repository of published data relate
 Although it is currently small, I hope it will continue to grow in usefulness as I continue to digitize and add data to it.
 I am always looking for help to maintain this resources and interested parties should contact me for information on how to get started.
 
-
 {:refdef: style="text-align: center;"}
 ![A scanning electron micrograph of a nanopatterned spiral photocathode proposed for source size reduction](/assets/img/spiral-plasmonic-lens.png){: width="400" }
 {: refdef}

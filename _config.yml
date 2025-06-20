@@ -15,12 +15,12 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: >
   academic, christopher pierce, chris pierce, accelerator physics, postdoc, university of chicago, enrico fermi institute,
-  machine learning, deep learning, differentiable physics, multiobjective optimization, photocathode, sciml, scientific machine learning  
+  machine learning, deep learning, differentiable physics, multiobjective optimization, photocathode, sciml, scientific machine learning
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚡ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://chris-pierce.com # the base hostname & protocol for your site
-baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
+baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
@@ -74,7 +74,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 # For Google Analytics, see https://support.google.com/analytics/answer/10447272?hl=en&ref_topic=14088998&sjid=5129943941510317771-SA#zippy=%2Cgoogle-sites
 # and follow the instructions for Google Sites. You will need to create a Google Analytics property and copy the Google tag ID.
-google_analytics: G-V4CPDWBH7X  # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
+google_analytics: G-V4CPDWBH7X # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
 cronitor_analytics: # cronitor RUM analytics site ID (format: XXXXXXXXX)
 pirsch_analytics: # your Pirsch analytics site ID (length 32 characters)
 openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
