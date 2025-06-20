@@ -6,9 +6,10 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Christopher
 middle_name: M.
 last_name: Pierce
-email: contact@chris-pierce.com
+# contact_note: >
+#   You can even add a little note about which of these is the best way to reach you.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Postdoc scholar at the University of Chicago studying the intersection of beam physics and machine learning.
+  Scientist studying the intersection of accelerator physics and machine learning.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -16,10 +17,10 @@ keywords: >
   academic, christopher pierce, chris pierce, accelerator physics, postdoc, university of chicago, enrico fermi institute,
   machine learning, deep learning, differentiable physics, multiobjective optimization, photocathode, sciml, scientific machine learning  
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚡  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: ⚡ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://chris-pierce.com # the base hostname & protocol for your site
-baseurl: # the subpath of your site, e.g. /blog/
+baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
@@ -42,15 +43,13 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: false
-
 # -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
+search_enabled: false
 socials_in_search: true
 posts_in_search: true
 bib_search: true
@@ -64,53 +63,21 @@ max_width: 930px
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
-serve_og_meta: true # Include Open Graph meta tags in the HTML head
-serve_schema_org: true # Include Schema.org in the HTML head
-og_image: https://chris-pierce.com/assets/img/opengraph-preview-photo.jpg # The site-wide (default for all links) Open Graph preview image
-
-# -----------------------------------------------------------------------------
-# Social integration
-# -----------------------------------------------------------------------------
-
-github_username: electronsandstuff # your GitHub user name
-gitlab_username: # your GitLab user name
-mastodon_username: fosstodon.org/@electronsnstuff # your mastodon instance+username in the format instance.tld/@username
-telegram_username: # your Telegram user name
-semanticscholar_id: # your Semantic Scholar ID
-whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-twitter_username: # your Twitter handle
-linkedin_username: christopher-pierce-physics # your LinkedIn user name
-scholar_userid: 3PDcxFYAAAAJ # your Google Scholar ID
-orcid_id: # your ORCID ID
-medium_username: # your Medium username
-quora_username: # your Quora username
-publons_id: # your ID on Publons
-research_gate_profile: # your profile on ResearchGate
-blogger_url: # your blogger URL
-work_url: # work page URL
-keybase_username: # your keybase user name
-wikidata_id: # your wikidata id
-dblp_url: # your DBLP profile url
-stackoverflow_id: # your stackoverflow id
-kaggle_id: # your kaggle id
-lastfm_id: # your lastfm id
-spotify_id: # your spotify id
-pinterest_id: # your pinterest id
-unsplash_id: # your unsplash id
-instagram_id: # your instagram id
-facebook_id: # your facebook id
-youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
-discord_id: # your discord id (18-digit unique numerical identifier)
-
-contact_note: >
-  Let's connect if you have similar research interests and are interested in collaboration!
+# see https://schema.org/docs/faq.html for more information
+serve_og_meta: false # Include Open Graph meta tags in the HTML head
+serve_schema_org: false # Include Schema.org in the HTML head
+og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
 
-google_analytics: G-V4CPDWBH7X # your google-analytics ID (format: UA-XXXXXXXXX)
-panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
+# For Google Analytics, see https://support.google.com/analytics/answer/10447272?hl=en&ref_topic=14088998&sjid=5129943941510317771-SA#zippy=%2Cgoogle-sites
+# and follow the instructions for Google Sites. You will need to create a Google Analytics property and copy the Google tag ID.
+google_analytics: G-V4CPDWBH7X  # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
+cronitor_analytics: # cronitor RUM analytics site ID (format: XXXXXXXXX)
+pirsch_analytics: # your Pirsch analytics site ID (length 32 characters)
+openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
 google_site_verification: # your google-site-verification ID (Google Search Console)
@@ -120,9 +87,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Chris Pierce # blog_name will be displayed in your blog page
-blog_nav_title: # your blog must have a title for it to be displayed in the nav bar
-blog_description: My unused blog
+blog_name: al-folio # blog_name will be displayed in your blog page
+blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -186,10 +152,6 @@ collections:
     output: true
   projects:
     output: true
-    permalink: /projects/:path/
-
-news_scrollable: false # adds a vertical scroll bar if there are more than 3 news items
-news_limit: 10 # leave blank to include all the news in the `_news` folder
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -211,6 +173,15 @@ kramdown:
 # Includes & excludes
 include: ["_pages", "_scripts"]
 exclude:
+  - _pages/blog.md
+  - _pages/books.md
+  - _pages/cv.md
+  - _pages/dropdown.md
+  - _pages/news.md
+  - _pages/profiles.md
+  - _pages/projects.md
+  - _pages/publications.md
+  - _pages/teaching.md
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
@@ -414,7 +385,7 @@ lazy_loading_images: true # enables lazy loading of images (recommended)
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics: true # enables google analytics
+enable_google_analytics: false # enables google analytics
 enable_cronitor_analytics: false # enables cronitor RUM analytics
 enable_pirsch_analytics: false # enables Pirsch analytics (https://pirsch.io/)
 enable_openpanel_analytics: false # enables Openpanel analytics (https://openpanel.dev/)
@@ -423,9 +394,9 @@ enable_bing_verification: false # enables bing site verification
 enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
-enable_darkmode: false # enables switching between light/dark modes
+enable_darkmode: true # enables switching between light/dark modes
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
-enable_project_categories: false # enables categorization of projects into multiple categories
+enable_project_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
 enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
