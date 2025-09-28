@@ -102,4 +102,5 @@ Plotting the densities using a histogram also helps to confirm that the method w
 
 ![Supergaussian density](/assets/img/tech_notes/supergaussian_samples_2.png){: width="500" }
 
-
+## Miscellaneous Notes
+- The PDF is also separable in Cartesian coordinates, but will give a similar CDF in terms of gamma functions. Generating the samples in polar coordinates reduces the number of calls to the inverse gamma function by a factor of two (only for $r$ instead of for both $x$ and $y$) which is desirable because it is the most computationally expensive part of the process.
