@@ -4,7 +4,7 @@ title: Sampling from the 2D Supergaussian Distribution
 date: 2025-09-24 11:12:00-0400
 description: Formulas for drawing samples from the supergaussian distribution with inversion sampling.
 tags:
-categories: 
+categories:
 related_posts: false
 ---
 
@@ -34,6 +34,7 @@ $$\rho_u(x) \to \rho_d(x^\prime).$$
 We have reproduced the desired distribution.
 
 # Inverse Cummulative Density Function of Supergaussian
+
 There are multiple ways of defining the supergaussian distribution, but for this note I will use the convention,
 
 $$\rho(x, y) = A\cdot\exp\left[-\log(2)\left(4x^2 + 4y^2\right)^n\right].$$
@@ -71,6 +72,7 @@ The second is rescaled to $[0, 2\pi]$ to give use $\theta$.
 The coordinates are the then transformed to cartesian coordinates.
 
 The following python code implements this.
+
 ```python
 from scipy.special import gammainccinv
 import numpy as np
@@ -98,5 +100,3 @@ This code gnerates the following samples. Remember that in my convention, $n=1$ 
 Plotting the densities using a histogram also helps to confirm that the method works.
 
 ![Supergaussian density](/assets/img/tech_notes/supergaussian_samples_2.png){: width="500" }
-
-
