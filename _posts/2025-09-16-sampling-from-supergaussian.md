@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Sampling from the 2D Supergaussian Distribution
-date: 2025-09-16 11:12:00-0400
-description: an example of a blog post with some math
-tags: formatting math
-categories: sample-posts
+date: 2025-09-24 11:12:00-0400
+description: Formulas for drawing samples from the supergaussian distribution with inversion sampling.
+tags:
+categories: 
 related_posts: false
 ---
 
