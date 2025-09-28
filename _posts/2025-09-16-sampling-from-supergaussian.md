@@ -8,6 +8,8 @@ categories:
 related_posts: false
 ---
 
+![Supergaussian density](/assets/img/tech_notes/supergaussian_samples_3.png){: width="400" }
+
 The 2D supergaussian distribution is useful for describing electron beams generated from lasers that can vary from Gaussian to flat-top in shape.
 To simulate these beams in a particle tracking code, samples need to be drawn from the distribution.
 In this note, I describe how to generate samples from the 2D supergaussian distribution using inversion sampling.
@@ -91,10 +93,10 @@ def sample_supergaussian(n, n_samp):
 
 This code gnerates the following samples. Remember that in my convention, $n=1$ is a Gaussian distribution, $n\to\inf$ is flat-top.
 
-![Supergaussian samples](/assets/img/supergaussian_samples_1.png){: width="500" }
+![Supergaussian samples](/assets/img/tech_notes/supergaussian_samples_1.png){: width="500" }
 
 Plotting the densities using a histogram also helps to confirm that the method works.
 
-![Supergaussian density](/assets/img/supergaussian_samples_2.png){: width="500" }
+![Supergaussian density](/assets/img/tech_notes/supergaussian_samples_2.png){: width="500" }
 
 
