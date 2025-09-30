@@ -35,9 +35,9 @@ Nonlinear space charge forces degrade the beam's "emittance" (in plain language,
 Space charge forces are usually expensive to model in physics-based simulation tools.
 However, after the neural network has been trained on sparse calculated results, it is able to query the properties of the beam as system parameters are varied in an efficient and differentiable manner.
 
-{:refdef: style="text-align: center;"}
-![A visualization of a particle beam's distribution function solved for using scientific machine learning](/assets/img/uniform-focusing-channel-beam-2.gif){: width="256" }
-{: refdef}
+<p align="center">
+<img src="/assets/img/uniform-focusing-channel-beam-2.gif" alt="A visualization of a particle beam's distribution function solved for using scientific machine learning" width="75%" style="max-width: 400px">
+</p>
 
 In addition to my work on scientific machine learning, my interests include photocathode physics for particle accelerator applications.
 Photocathodes are used to generate high-brightness electron beams which are necessary for some applications of particle accelerators, such as [free electron lasers](https://lcls.slac.stanford.edu/lcls-ii) and [ultrafast electron diffraction](https://en.wikipedia.org/wiki/Ultrafast_electron_diffraction).
@@ -51,6 +51,6 @@ Additionally, I created and maintain an open repository of published data relate
 Although it is currently small, I hope it will continue to grow in usefulness as I continue to digitize and add data to it.
 I am always looking for help to maintain this resources and interested parties should contact me for information on how to get started.
 
-{:refdef: style="text-align: center;"}
-![A scanning electron micrograph of a nanopatterned spiral photocathode proposed for source size reduction](/assets/img/spiral-plasmonic-lens.png){: width="400" }
-{: refdef}
+<p align="center">
+<img src="/assets/img/spiral-plasmonic-lens.png" alt="A scanning electron micrograph of a nanopatterned spiral photocathode proposed for source size reduction" width="75%" style="max-width: 400px">
+</p>
