@@ -8,7 +8,9 @@ categories:
 related_posts: false
 ---
 
-![Supergaussian density](/assets/img/tech_notes/supergaussian_samples_3.png){: width="400" }
+<p align="center">
+<img src="/assets/img/tech_notes/supergaussian_samples_3.png" alt="Supergaussian conditional density" width="75%" style="max-width: 400px">
+</p>
 
 The 2D supergaussian distribution is useful for describing electron beams generated from lasers that can vary from Gaussian to flat-top in shape.
 To simulate these beams in a particle tracking code, samples I need a method to generate samples from this distribution numerically.
@@ -94,14 +96,18 @@ def sample_supergaussian(n, n_samp):
     return x, y
 ```
 
-This code generates the following samples. Remember that in my convention, $n=1$ is a Gaussian distribution, $n\to\inf$ is flat-top.
+This code generates the following samples. Remember that in my convention, $n=1$ is a Gaussian distribution, $n\to\infty$ is flat-top.
 
-![Supergaussian samples](/assets/img/tech_notes/supergaussian_samples_1.png){: width="500" }
+<p align="center">
+<img src="/assets/img/tech_notes/supergaussian_samples_1.png" alt="Supergaussian samples" width="75%" style="max-width: 400px">
+</p>
 
 The samples behave qualitatively as expected.
 Plotting the densities using a histogram also helps to confirm that the method works.
 
-![Supergaussian density](/assets/img/tech_notes/supergaussian_samples_2.png){: width="500" }
+<p align="center">
+<img src="/assets/img/tech_notes/supergaussian_samples_2.png" alt="Supergaussian density" width="75%" style="max-width: 400px">
+</p>
 
 ## Miscellaneous Notes
 

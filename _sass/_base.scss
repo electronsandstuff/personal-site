@@ -2,6 +2,19 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+ /* Responsive MathJax/KaTeX equations */
+.MathJax, .katex, .MathJax_Display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+/* For display equations */
+.MathJax_Display {
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+}
+
 // Typography
 
 p,
