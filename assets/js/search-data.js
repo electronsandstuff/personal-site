@@ -37,6 +37,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/http:/photos.chris-pierce.com/";
           },
+        },{id: "nav-photocathodes",
+          title: "Photocathodes",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/http:/photocathodes.io/";
+          },
         },{id: "post-sampling-from-the-2d-supergaussian-distribution",
         
           title: "Sampling from the 2D Supergaussian Distribution",
@@ -100,6 +107,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-for-those-with-needs-to-estimate-covariance-centroid-from-images-of-charged-particle-and-laser-beams-check-out-my-library-beamfit-available-now-through-pip-and-conda-conda-pip-install-beamfit",
           title: 'For those with needs to estimate covariance/centroid from images of charged particle and...',
+          description: "",
+          section: "News",},{id: "news-my-c-library-parcel-is-now-available-for-public-use-save-and-load-particle-data-in-the-openpmd-standard-in-your-existing-physics-simulation-tool",
+          title: 'My C library Parcel is now available for public use. Save and load...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
