@@ -12,12 +12,17 @@ My own released projects are available to download on my github account under th
 Additionally, I operate [The Photocathode Database](https://photocathodes.io), a repository for published measurements on photocathode materials.
 I encourage others to contribute to my projects, whether by submitting bug reports, helping to digitize scientific data, making feature requests, or contributing code.
 
-The following repositories are a couple of the projects that I have released.
-Follow the links and take a look around.
-
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  {% for user in site.data.repositories.github_users %}
+    {% include repository/repo_user.liquid username=user %}
+  {% endfor %}
+</div>
+<br><br>
 {% if site.data.repositories.github_repos %}
 
 ## GitHub Repositories
+The following repositories are a couple of the projects that I have released.
+Follow the links and take a look around.
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for repo in site.data.repositories.github_repos %}

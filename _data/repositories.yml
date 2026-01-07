@@ -4,6 +4,7 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
+  - electronsandstuff/Parcel
   - electronsandstuff/easygdf
   - electronsandstuff/py-pfeiffer-vacuum-protocol
   - electronsandstuff/electronsandstuff
