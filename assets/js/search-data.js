@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/http:/photocathodes.io/";
           },
-        },{id: "post-sampling-from-the-2d-supergaussian-distribution",
+        },{id: "post-m-2-ssd-nas-build-and-benchmarking",
+        
+          title: "M.2 SSD NAS Build and Benchmarking",
+        
+        description: "I needed more storage and took the opportunity to compare ZFS layout performance.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/nas-benchmarking/";
+          
+        },
+      },{id: "post-sampling-from-the-2d-supergaussian-distribution",
         
           title: "Sampling from the 2D Supergaussian Distribution",
         
