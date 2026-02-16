@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Accelerator Physicist, xLight Inc.
+subtitle: AI/ML Lead, xLight Inc.
 
 profile:
   align: right
@@ -25,32 +25,21 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Particle accelerators are an ideal playground to explore the potential of scientific machine learning.
-These systems generate large, complex, and physically-constrained data sets, which can be challenging to analyze using traditional methods.
-Machine learning techniques, however, have shown promise in uncovering complex nonlinear patterns and correlations in data and we may be able to use them to improve the way particle accelerators are designed and operated.
-In my work, I am integrating machine learning techniques with the physical laws that govern charged particle beams to improve the modeling, instrumentation, control, and optimization of particle accelerators.
+Hello and welcome to my personal website!
+I am an AI/ML researcher and physicist in the San Francisco Bay Area.
 
-As an example of the power of machine learning, the following figure represents the output of a neural network which has been trained to predict the shape of a particle beam in phase space as it traverses a toy particle accelerator.
-Nonlinear space charge forces degrade the beam's "emittance" (in plain language, quality) over time.
-Space charge forces are usually expensive to model in physics-based simulation tools.
-However, after the neural network has been trained on sparse calculated results, it is able to query the properties of the beam as system parameters are varied in an efficient and differentiable manner.
+As part of the team at [xLight Inc.](https://www.xlight.com/) I am helping to commercialize particle accelerators [for use in semiconductor manufacturing](https://www.youtube.com/watch?v=MiUHjLxm3V0).
+My work focuses on physical modeling and autonomous control problems that are uniquely addressed by recent advances in ML.
 
-<p align="center">
-<img src="/assets/img/uniform-focusing-channel-beam-2.gif" alt="A visualization of a particle beam's distribution function solved for using scientific machine learning" width="75%" style="max-width: 400px">
-</p>
+With nearly a decade of software engineering experience, I like to build tools to solve the problems I face in research, work, and personal life.
+[The Photocathodes Database](https://photocathodes.io/) lists measurements on the materials I studied in PhD.
+Some libraries I have authored include: [EasyGDF](https://github.com/electronsandstuff/easygdf), [ParetoBench](https://github.com/electronsandstuff/ParetoBench), [BeamFit](https://github.com/electronsandstuff/BeamFit), and [Parcel](https://github.com/electronsandstuff/Parcel).
+I enjoy coding challenges such as [Advent of Code](https://github.com/electronsandstuff/AdventofCode2023) when I have the time.
 
-In addition to my work on scientific machine learning, my interests include photocathode physics for particle accelerator applications.
-Photocathodes are used to generate high-brightness electron beams which are necessary for some applications of particle accelerators, such as [free electron lasers](https://lcls.slac.stanford.edu/lcls-ii) and [ultrafast electron diffraction](https://en.wikipedia.org/wiki/Ultrafast_electron_diffraction).
-The brightness of electron beams produced by the photocathode is highly dependent on the choice of photocathode material and in particular a material-dependent property called the mean transverse energy.
-Measuring the mean tranverse energy of photocathodes and devloping models that can predict this metric based on other material properties and understand how real-world problems can affect models are important goals in accelerator physics.
+On Github, you can find me under the name [electronsandstuff](https://github.com/electronsandstuff) where I help maintain and contribute to open source projects such as the [Xopt](https://xopt.xopt.org/) optimization framework and [LUME](https://github.com/lume-science) python libraries for accelerator simulation.
 
-My work in the area of photocathode physics is related to exploiting the electronic band structure of semiconductors to limit the mean transverse energy of the photocathode and explore nonlinear photoemission processes via nanopatterned surfaces as a mechanism to shrink the photocathode's source size (see image below).
-My past work has also shown how nonlinear processes can be enhanced using nanoscale patterning of metal surfaces to improve the efficiency of generating short pulses of electrons.
-Additionally, I created and maintain an open repository of published data related to photocathode materials.
-[The Photocathode Database](https://photocathodes.io) exists to connect researchers with published measurements on a variety of photocathode materials.
-Although it is currently small, I hope it will continue to grow in usefulness as I continue to digitize and add data to it.
-I am always looking for help to maintain this resources and interested parties should contact me for information on how to get started.
+In my spare time, I enjoy photography and staying connected to my experimental physics roots with hobbyist electronics and tinkering.
+Check out [my photo gallery](http://photos.chris-pierce.com/).
 
-<p align="center">
-<img src="/assets/img/spiral-plasmonic-lens.png" alt="A scanning electron micrograph of a nanopatterned spiral photocathode proposed for source size reduction" width="75%" style="max-width: 400px">
-</p>
+I love getting nerd-sniped by unique technical challenges and working with great teams.
+Reach out if you want to find a way to collaborate!
