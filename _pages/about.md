@@ -28,7 +28,7 @@ latest_posts:
 Hello and welcome to my personal website!
 I am an AI/ML researcher and physicist in the San Francisco Bay Area.
 
-As part of the team at [xLight Inc.](https://www.xlight.com/) I am helping to commercialize particle accelerators [for use in semiconductor manufacturing](https://www.youtube.com/watch).
+As part of the team at [xLight Inc.](https://www.xlight.com/) I am helping to commercialize particle accelerators [for use in semiconductor manufacturing](https://www.youtube.com/watch?v=MiUHjLxm3V0).
 I am focused on physical modeling and autonomous control problems that can be uniquely addressed by recent advances in machine learning.
 
 
