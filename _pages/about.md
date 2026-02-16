@@ -32,13 +32,15 @@ As part of the team at [xLight Inc.](https://www.xlight.com/) I am helping to co
 I am focused on physical modeling and autonomous control problems that can be uniquely addressed by recent advances in machine learning.
 
 
-<p align="center">
-<img src="/assets/img/uniform-focusing-channel-beam-2.gif" alt="A visualization of a particle beam's distribution function solved for using scientific machine learning" width="50%" style="max-width: 300px">
-</p>
+With nearly a decade of software engineering experience, I like to build tools to solve the problems I face in research, work, and personal life.
+[The Photocathodes Database](https://photocathodes.io/) lists measurements on the materials I studied in PhD.
+Some libraries I have authored include: [EasyGDF](https://github.com/electronsandstuff/easygdf), [ParetoBench](https://github.com/electronsandstuff/ParetoBench), [BeamFit](https://github.com/electronsandstuff/BeamFit), and [Parcel](https://github.com/electronsandstuff/Parcel).
+I enjoy coding challenges such as [Advent of Code](https://github.com/electronsandstuff/AdventofCode2023) when I have the time.
 
-With nearly a decade of software engineering experience, I build tools to solve the problems I face in research, work, and personal life.
-[The Photocathodes Database](https://photocathodes.io/) aggregates measurements on the materials systems I studied in PhD.
-On Github, I contribute to and and maintain open source software under the name [electronsandstuff](https://github.com/electronsandstuff).
+On Github, you can find me under the name [electronsandstuff](https://github.com/electronsandstuff) where I help maintain and contribute to open source projects such as the [Xopt](https://xopt.xopt.org/) optimization framework and [LUME](https://github.com/lume-science) python libraries for accelerator simulation.
 
 In my spare time, I enjoy photography and keeping in touch with my experimental physics roots with hobbyist electronics and tinkering.
 Check out [my photo gallery](http://photos.chris-pierce.com/).
+
+I love getting nerd-sniped by unique technical challenges and working with great teams.
+Reach out if you want to find a way to collaborate!
