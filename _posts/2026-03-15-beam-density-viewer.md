@@ -17,7 +17,10 @@ Placeholder text
 <div class="controls" style="background:white;padding:20px;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1);margin-bottom:20px;">
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;">
     <div>
-      <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">s (position): <span style="font-family:monospace;color:#007bff;" id="dv-s_val">0.0</span></label>
+      <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">
+        s (position): <span style="font-family:monospace;color:#007bff;" id="dv-s_val">0.0</span>
+        <button id="dv-play" style="margin-left:10px;padding:2px 10px;border:1px solid #007bff;border-radius:4px;background:white;color:#007bff;cursor:pointer;font-size:0.85em;">&#9654; Play</button>
+      </label>
       <input type="range" id="dv-s" min="0" max="300" step="1" value="0" style="width:100%;">
     </div>
     <div>
@@ -57,10 +60,14 @@ Placeholder text
 (function() {
   let session = null;
   let isComputing = false;
+  let isPlaying = false;
+  let playStartTime = null;
+  const PLAY_DURATION_MS = 7500;
+  const FRAME_MS = 1000 / 24;
 
   const MODEL_URL = '/assets/html/2026-03-15-beam-density-viewer/model.onnx';
   const RESOLUTION = 96;
-  const X_RANGE = 1.2e-2;
+  const X_RANGE = 1.5e-2;
   const XP_RANGE = 3e-3;
 
   const paramIds = ['s', 'twiss_beta', 'twiss_alpha', 'supergaussian_n', 'perveance', 'lattice_k', 'emittance'];
@@ -96,6 +103,32 @@ Placeholder text
     updateTimeout = setTimeout(updatePlot, 10);
   }
 
+  const playBtn = document.getElementById('dv-play');
+  playBtn.addEventListener('click', () => {
+    isPlaying = !isPlaying;
+    playBtn.textContent = isPlaying ? '⏸ Pause' : '▶ Play';
+    if (isPlaying) {
+      playStartTime = performance.now();
+      playFrame();
+    }
+  });
+
+  function playFrame() {
+    if (!isPlaying) return;
+    const slider = document.getElementById('dv-s');
+    const valEl = document.getElementById('dv-s_val');
+    const elapsed = (performance.now() - playStartTime) % PLAY_DURATION_MS;
+    const s = Math.round((elapsed / PLAY_DURATION_MS) * parseInt(slider.max));
+    slider.value = s;
+    valEl.textContent = s.toPrecision(3);
+    const frameStart = performance.now();
+    updatePlot().then(() => {
+      if (!isPlaying) return;
+      const frameElapsed = performance.now() - frameStart;
+      setTimeout(playFrame, Math.max(0, FRAME_MS - frameElapsed));
+    });
+  }
+
   async function loadModel() {
     const status = document.getElementById('status');
     try {
@@ -113,7 +146,8 @@ Placeholder text
   }
 
   async function updatePlot() {
-    if (!session || isComputing) return;
+    if (!session) return;
+    if (isComputing) return;
     isComputing = true;
     try {
       const s = parseFloat(document.getElementById('dv-s').value);
