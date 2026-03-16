@@ -18,33 +18,33 @@ Placeholder text
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;">
     <div>
       <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">
-        s (position): <span style="font-family:monospace;color:#007bff;" id="dv-s_val">0.0</span>
+        Position (s): <span style="font-family:monospace;color:#007bff;" id="dv-s_val">0.0</span><span style="font-family:monospace;color:#007bff;"> m</span>
         <button id="dv-play" style="margin-left:10px;padding:2px 10px;border:1px solid #007bff;border-radius:4px;background:white;color:#007bff;cursor:pointer;font-size:0.85em;">&#9654; Play</button>
       </label>
       <input type="range" id="dv-s" min="0" max="300" step="1" value="0" style="width:100%;">
     </div>
     <div>
-      <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">twiss_beta: <span style="font-family:monospace;color:#007bff;" id="dv-twiss_beta_val">3.0</span></label>
+      <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">Initial Twiss Beta: <span style="font-family:monospace;color:#007bff;" id="dv-twiss_beta_val">3.0</span><span style="font-family:monospace;color:#007bff;"> m</span></label>
       <input type="range" id="dv-twiss_beta" min="3" max="8" step="0.1" value="3.0" style="width:100%;">
     </div>
     <div>
-      <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">twiss_alpha: <span style="font-family:monospace;color:#007bff;" id="dv-twiss_alpha_val">0.0</span></label>
+      <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">Initial Twiss Alpha: <span style="font-family:monospace;color:#007bff;" id="dv-twiss_alpha_val">0.0</span></label>
       <input type="range" id="dv-twiss_alpha" min="-0.5" max="0.5" step="0.1" value="0.0" style="width:100%;">
     </div>
     <div>
-      <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">supergaussian_n: <span style="font-family:monospace;color:#007bff;" id="dv-supergaussian_n_val">2.0</span></label>
+      <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">Initial Supergaussian `n`: <span style="font-family:monospace;color:#007bff;" id="dv-supergaussian_n_val">2.0</span></label>
       <input type="range" id="dv-supergaussian_n" min="1" max="10" step="0.5" value="2.0" style="width:100%;">
     </div>
     <div>
-      <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">perveance: <span style="font-family:monospace;color:#007bff;" id="dv-perveance_val">0.00001</span></label>
+      <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">Perveance (k): <span style="font-family:monospace;color:#007bff;" id="dv-perveance_val">1.0e-4</span></label>
       <input type="range" id="dv-perveance" min="0.00001" max="0.0001" step="0.00001" value="0.0001" style="width:100%;">
     </div>
     <div>
-      <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">lattice_k: <span style="font-family:monospace;color:#007bff;" id="dv-lattice_k_val">0.125</span></label>
+      <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">Lattice Focusing k: <span style="font-family:monospace;color:#007bff;" id="dv-lattice_k_val">0.125</span><span style="font-family:monospace;color:#007bff;"> m⁻¹</span></label>
       <input type="range" id="dv-lattice_k" min="0.125" max="0.333" step="0.002" value="0.125" style="width:100%;">
     </div>
     <div>
-      <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">emittance: <span style="font-family:monospace;color:#007bff;" id="dv-emittance_val">1.0</span> μm</label>
+      <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">Initial Emittance: <span style="font-family:monospace;color:#007bff;" id="dv-emittance_val">1.0</span><span style="font-family:monospace;color:#007bff;"> μm</span></label>
       <input type="range" id="dv-emittance" min="0.1" max="1.0" step="0.05" value="1.0" style="width:100%;">
     </div>
   </div>
@@ -90,7 +90,7 @@ Placeholder text
     slider.addEventListener('input', () => {
       let v = parseFloat(slider.value);
       if (param === 'emittance') valEl.textContent = v.toFixed(2);
-      else if (param === 'perveance') valEl.textContent = v.toFixed(5);
+      else if (param === 'perveance') valEl.textContent = v.toExponential(1);
       else valEl.textContent = v.toPrecision(3);
       scheduleUpdate();
     });
