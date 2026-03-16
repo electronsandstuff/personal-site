@@ -21,8 +21,8 @@ Placeholder text
       <input type="range" id="dv-s" min="0" max="300" step="1" value="0" style="width:100%;">
     </div>
     <div>
-      <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">twiss_beta: <span style="font-family:monospace;color:#007bff;" id="dv-twiss_beta_val">7.0</span></label>
-      <input type="range" id="dv-twiss_beta" min="3" max="8" step="0.1" value="7.0" style="width:100%;">
+      <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">twiss_beta: <span style="font-family:monospace;color:#007bff;" id="dv-twiss_beta_val">3.0</span></label>
+      <input type="range" id="dv-twiss_beta" min="3" max="8" step="0.1" value="3.0" style="width:100%;">
     </div>
     <div>
       <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">twiss_alpha: <span style="font-family:monospace;color:#007bff;" id="dv-twiss_alpha_val">0.0</span></label>
@@ -34,15 +34,15 @@ Placeholder text
     </div>
     <div>
       <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">perveance: <span style="font-family:monospace;color:#007bff;" id="dv-perveance_val">0.00001</span></label>
-      <input type="range" id="dv-perveance" min="0.00001" max="0.0001" step="0.00001" value="0.00001" style="width:100%;">
+      <input type="range" id="dv-perveance" min="0.00001" max="0.0001" step="0.00001" value="0.0001" style="width:100%;">
     </div>
     <div>
       <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">lattice_k: <span style="font-family:monospace;color:#007bff;" id="dv-lattice_k_val">0.125</span></label>
       <input type="range" id="dv-lattice_k" min="0.125" max="0.333" step="0.002" value="0.125" style="width:100%;">
     </div>
     <div>
-      <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">emittance: <span style="font-family:monospace;color:#007bff;" id="dv-emittance_val">1e-6</span></label>
-      <input type="range" id="dv-emittance" min="-7" max="-6" step="0.1" value="-6" style="width:100%;">
+      <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">emittance: <span style="font-family:monospace;color:#007bff;" id="dv-emittance_val">1.0</span> μm</label>
+      <input type="range" id="dv-emittance" min="0.1" max="1.0" step="0.05" value="1.0" style="width:100%;">
     </div>
   </div>
 </div>
@@ -59,9 +59,9 @@ Placeholder text
   let isComputing = false;
 
   const MODEL_URL = '/assets/html/2026-03-15-beam-density-viewer/model.onnx';
-  const RESOLUTION = 64;
-  const X_RANGE = 6e-3;
-  const XP_RANGE = 2e-3;
+  const RESOLUTION = 96;
+  const X_RANGE = 1.2e-2;
+  const XP_RANGE = 3e-3;
 
   const paramIds = ['s', 'twiss_beta', 'twiss_alpha', 'supergaussian_n', 'perveance', 'lattice_k', 'emittance'];
 
@@ -83,7 +83,7 @@ Placeholder text
     const valEl = document.getElementById('dv-' + param + '_val');
     slider.addEventListener('input', () => {
       let v = parseFloat(slider.value);
-      if (param === 'emittance') valEl.textContent = Math.pow(10, v).toExponential(1);
+      if (param === 'emittance') valEl.textContent = v.toFixed(2);
       else if (param === 'perveance') valEl.textContent = v.toFixed(5);
       else valEl.textContent = v.toPrecision(3);
       scheduleUpdate();
@@ -122,7 +122,7 @@ Placeholder text
       const supergaussian_n = parseFloat(document.getElementById('dv-supergaussian_n').value);
       const perveance = parseFloat(document.getElementById('dv-perveance').value);
       const lattice_k = parseFloat(document.getElementById('dv-lattice_k').value);
-      const emittance = Math.pow(10, parseFloat(document.getElementById('dv-emittance').value));
+      const emittance = parseFloat(document.getElementById('dv-emittance').value) * 1e-6;
       const xpValues = [];
       for (let j = 0; j < RESOLUTION; j++) {
         xpValues.push(-XP_RANGE + (2 * XP_RANGE * j) / (RESOLUTION - 1));
