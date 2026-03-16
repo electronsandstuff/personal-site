@@ -44,7 +44,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/http:/photocathodes.io/";
           },
-        },{id: "post-m-2-ssd-nas-build-and-benchmarking",
+        },{id: "post-learning-implicit-particle-beam-representations",
+        
+          title: "Learning Implicit Particle Beam Representations",
+        
+        description: "Making a neural network pretend to be a particle beam.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/beam-density-viewer/";
+          
+        },
+      },{id: "post-speeding-up-darktable-culling",
+        
+          title: "Speeding Up Darktable Culling",
+        
+        description: "Pregenerating Darktable thumbnail cache to avoid interruptions durring culling.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/darktable-performance/";
+          
+        },
+      },{id: "post-m-2-ssd-nas-build-and-benchmarking",
         
           title: "M.2 SSD NAS Build and Benchmarking",
         
