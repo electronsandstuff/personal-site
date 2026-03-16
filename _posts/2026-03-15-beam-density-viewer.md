@@ -50,7 +50,7 @@ Placeholder text
   </div>
 </div>
 
-<div id="dv-plot" style="background:white;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1);"></div>
+<div id="dv-plot" style="background:white;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1);width:100%;"></div>
 
 </div>
 
@@ -76,14 +76,13 @@ Placeholder text
     z: [[0]],
     type: 'heatmap',
     colorscale: 'Viridis',
-    colorbar: { title: 'Density (k/mm/μm)' }
+    colorbar: { title: { text: 'Density<br>(k/mm/μm)', side: 'top', font: { size: 10 } }, thickness: 15 }
   }], {
     title: 'Beam Density Distribution',
     xaxis: { title: 'x (mm)' },
     yaxis: { title: "x' (mrad)" },
-    width: 800,
-    height: 600,
-  });
+    height: 500,
+  }, { responsive: true });
 
   paramIds.forEach(param => {
     const slider = document.getElementById('dv-' + param);
