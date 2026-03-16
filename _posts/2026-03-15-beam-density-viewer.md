@@ -18,7 +18,7 @@ This is called an implicit neural representation and has [some writing](https://
 Using a particle tracking code, I have already generated a dataset of 1D electron beams in a uniform focusing channel with space charge for a variety of system and initial parameters.
 The initial beam was [supergaussian]({% post_url /_posts/2025-09-16-sampling-from-supergaussian %}) and I varied the following (with some descriptions for those not used to accelerator physics jargon).
 - Initial Twiss beta (the initial ratio of the beam's size in $x$ and $p_x$)
-- Initial Twiss alpha (the initial correlatoin between $x$ and $p_x$)
+- Initial Twiss alpha (the initial correlation between $x$ and $p_x$)
 - Initial emittance (beam's initial area in phase space)
 - Supergaussian "n" of initial distribution (how "sharp" is the initial distribution)
 - Beam perveance (bunch charge, controls amount of space charge forces... ie the repulsion of the beam away from itself.)
@@ -34,7 +34,7 @@ This simple model makes sense as all of the densities should look a bit like sup
 The MLP should be ok at learning the stuff inside $\exp(\cdots)$.
 This ended up taking more compute than I was expecting for the system, but I suppose the number of parameters ended up being ambitious and the number of training samples is large considering each pixel in the images counts.
 Training went well with the learning rate getting dropped after successive rounds.
-I found that a fairly large learning rate was need to get the model to start to look "beam-like" at all and then a lower learning rate is need to beging representing details in the image.
+I found that a fairly large learning rate was needed to get the model to start to look "beam-like" at all and then a lower learning rate is needed to begin representing details in the image.
 
 <p align="center">
 <img src="/assets/img/tech_notes/2026-03-15-beam/training.jpg" alt="Training curves" width="75%" style="max-width: 400px">
@@ -47,7 +47,6 @@ Go ahead and change the knobs and explore the dataset.
 
 This simple model has some "stripe" artifacts in it which I would like to work out.
 I believe regularization will help.
-This representation of the beam is ammenable to the inclusion of physics-informed priors which I plan to experiment with.
 
 <div id="density-viewer">
 
