@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Particle Beam Implicit Models
+title: Learning Implicit Particle Beam Representations
 date: 2026-03-15 11:12:00-0400
 description: An interactive viewer for exploring beam phase-space density predictions from a neural network surrogate model.
 tags:
@@ -12,7 +12,7 @@ Placeholder text
 
 <div id="density-viewer">
 
-<div id="status" style="padding:10px;border-radius:4px;margin-bottom:20px;background:#fff3cd;color:#856404;">Loading model...</div>
+<div id="status" style="padding:10px;border-radius:4px;margin-bottom:20px;display:none;"></div>
 
 <div class="controls" style="background:white;padding:20px;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1);margin-bottom:20px;">
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;">
@@ -133,11 +133,9 @@ Placeholder text
     const status = document.getElementById('status');
     try {
       session = await ort.InferenceSession.create(MODEL_URL);
-      status.style.background = '#d4edda';
-      status.style.color = '#155724';
-      status.textContent = 'Model ready';
       updatePlot();
     } catch (err) {
+      status.style.display = 'block';
       status.style.background = '#f8d7da';
       status.style.color = '#721c24';
       status.textContent = 'Error loading model: ' + err.message;
