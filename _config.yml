@@ -89,6 +89,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
 blog_name: Tech Notes # blog_name will be displayed in your blog page
 blog_description: Short technical musings for future me (and maybe you)
+future: true
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
