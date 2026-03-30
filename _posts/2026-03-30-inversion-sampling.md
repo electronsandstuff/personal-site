@@ -51,13 +51,13 @@ def sample_2d_image(rho, n_samp):
 As an experiment, we can take some 2D histograms of electron beams and turn them back into samples. Overlaying the density back with itself, we can visually see that things line up. Note, I am flipping the sign of $m$ for plotting to deal with mixed conventions for images and scatter plots.
 
 <p align="center">
-<img src="/assets/img/tech_notes/2026-03-30-inversion-sampling/Pasted image 20260319021248.png" alt="Inversion sampling from beam distribution." width="75%" style="max-width: 400px">
+<img src="/assets/img/tech_notes/2026-03-30-inversion-sampling/Pasted image 20260319021248.png" alt="Inversion sampling from beam distribution." width="85%" style="max-width: 750px">
 </p>
 
 We can also sample from more interesting distributions.
 
 <p align="center">
-<img src="/assets/img/tech_notes/2026-03-30-inversion-sampling/Pasted image 20260319021401.png" alt="Fun example of inversion sampling." width="75%" style="max-width: 400px">
+<img src="/assets/img/tech_notes/2026-03-30-inversion-sampling/Pasted image 20260319021401.png" alt="Fun example of inversion sampling." width="85%" style="max-width: 750px">
 </p>
 
 Note: this is the method used in [Distgen](https://github.com/ColwynGulliford/distgen) and looking over the source code helped me with the image sampling problem. Go check out the repo and toss a Github star their way.
