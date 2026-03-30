@@ -12,9 +12,12 @@ Inversion sampling ([also mentioned here]({% post_url /_posts/2025-09-16-samplin
 
 In 2D, things are a little more convoluted, but we can still handle each coordinate one at a time.
 We draw one variable ($y$ here) from its marginal distribution, then for each element in the sample, draw the other variable ($x$) from its conditional distribution given the corresponding value of $y$. That is, if we draw two samples from uniformly distributed random variables on `[0, 1]`, the transformed samples are the following.
+
 $$y_s = \text{CDF}_{y}^{-1}(v),$$
+
 $$x_s = \text{CDF}^{-1}_{y=y_s}(u),$$
-Where $\text{CDF}_{y}$ means the CDF of y's marginal distribution ($\rho(y) = \int \rho(x, y) \mathrm{d}x$) and $\text{CDF}_{y=y^\prime}$ is the CDF of the conditional distribution of $x$ given the sampled value of $y$, $\rho(x | y) = \rho(x, y)/\rho(y)$.
+
+Where $\text{CDF}_y$ means the CDF of y's marginal distribution ($\rho(y) = \int \rho(x, y) \mathrm{d}x$) and $\text{CDF}_{y=y^\prime}$ is the CDF of the conditional distribution of $x$ given the sampled value of $y$, $\rho(x | y) = \rho(x, y)/\rho(y)$.
 
 Since this method is easy to evaluate numerically, we can do fun things like consider the pixel intensities inside of an image as defining a probability distribution and drawing samples from it. The following python code will do this.
 
