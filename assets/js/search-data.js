@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/http:/photocathodes.io/";
           },
-        },{id: "post-learning-implicit-particle-beam-representations",
+        },{id: "post-2d-inversion-sampling-with-images",
+        
+          title: "2D Inversion Sampling with Images",
+        
+        description: "A fun crossover between probability theory and numerical methods",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/inversion-sampling/";
+          
+        },
+      },{id: "post-learning-implicit-particle-beam-representations",
         
           title: "Learning Implicit Particle Beam Representations",
         
