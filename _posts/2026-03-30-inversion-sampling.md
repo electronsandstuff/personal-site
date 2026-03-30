@@ -17,7 +17,7 @@ $$y_s = \text{CDF}_{y}^{-1}(v),$$
 
 $$x_s = \text{CDF}^{-1}_{y=y_s}(u),$$
 
-Where $\text{CDF}_y$ means the CDF of y's marginal distribution ($\rho(y) = \int \rho(x, y) \mathrm{d}x$) and $\text{CDF}_{y=y^\prime}$ is the CDF of the conditional distribution of $x$ given the sampled value of $y$, $\rho(x | y) = \rho(x, y)/\rho(y)$.
+Where $\text{CDF}\_y$ means the CDF of y's marginal distribution ($\rho(y) = \int \rho(x, y) \mathrm{d}x$) and $\text{CDF}\_{y=y^\prime}$ is the CDF of the conditional distribution of $x$ given the sampled value of $y$, $\rho(x \| y) = \rho(x, y)/\rho(y)$.
 
 Since this method is easy to evaluate numerically, we can do fun things like consider the pixel intensities inside of an image as defining a probability distribution and drawing samples from it. The following python code will do this.
 
