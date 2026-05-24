@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/http:/photocathodes.io/";
           },
-        },{id: "post-2d-inversion-sampling-with-images",
+        },{id: "post-cosmic-rays-on-a-transatlantic-flight",
+        
+          title: "Cosmic Rays on a Transatlantic Flight",
+        
+        description: "Measuring radiation with a pocket scintillation counter at 10 km altitude",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/flight-radiation/";
+          
+        },
+      },{id: "post-2d-inversion-sampling-with-images",
         
           title: "2D Inversion Sampling with Images",
         
