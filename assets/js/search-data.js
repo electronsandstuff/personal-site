@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/http:/photocathodes.io/";
           },
-        },{id: "post-cosmic-rays-on-a-transatlantic-flight",
+        },{id: "post-cobra-lily-tissue-culture",
+        
+          title: "Cobra Lily Tissue Culture",
+        
+        description: "My first steps in growing a cobra lily (darlingtonia californica) from tissue culture.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/tissue-culture/";
+          
+        },
+      },{id: "post-cosmic-rays-on-a-transatlantic-flight",
         
           title: "Cosmic Rays on a Transatlantic Flight",
         
