@@ -4,10 +4,9 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
+  - xopt-org/Xopt
   - electronsandstuff/Parcel
   - electronsandstuff/easygdf
   - electronsandstuff/py-pfeiffer-vacuum-protocol
-  - electronsandstuff/electronsandstuff
   - electronsandstuff/ParetoBench
-  - electronsandstuff/Advent-of-Code-2021
   - electronsandstuff/AdventOfCode2023
